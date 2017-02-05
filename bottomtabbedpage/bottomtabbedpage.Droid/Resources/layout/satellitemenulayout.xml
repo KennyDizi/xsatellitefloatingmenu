@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bottomtabbedpage.Droid.Satellite.SatelliteMenuButton
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pop="http://schemas.android.com/apk/res-auto"
+        pop:speed="200"
+        pop:radius="100dp"
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="20dp">
+  <ImageView
+      android:id="@+id/popoutMenu"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/menu"
+      android:layout_gravity="bottom|left"
+      android:contentDescription="@string/empty" />
+</bottomtabbedpage.Droid.Satellite.SatelliteMenuButton>

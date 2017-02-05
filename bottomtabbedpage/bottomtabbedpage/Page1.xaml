@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sourceCode:XNativeBasePageView
+    x:Class="bottomtabbedpage.Page1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:sourceCode="clr-namespace:bottomtabbedpage.SourceCode;assembly=bottomtabbedpage">
+    <Image x:Name="ImageCity" />
+</sourceCode:XNativeBasePageView>
