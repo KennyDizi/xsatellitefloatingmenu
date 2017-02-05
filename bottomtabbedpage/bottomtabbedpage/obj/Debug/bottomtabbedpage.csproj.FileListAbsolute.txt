@@ -25,10 +25,8 @@ D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin\Debug\Xamarin.Forms.Platform.pdb
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin\Debug\Xamarin.Forms.Xaml.pdb
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin\Debug\Xamarin.Forms.Xaml.xml
-D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.csprojResolveAssemblyReference.cache
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.App.xaml.g.cs
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.Page1.xaml.g.cs
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.dll
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.pdb
-D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.dll.mdb
-D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin\Debug\bottomtabbedpage.dll.mdb
+D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.csprojResolveAssemblyReference.cache

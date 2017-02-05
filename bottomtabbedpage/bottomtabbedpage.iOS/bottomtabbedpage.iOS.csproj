@@ -94,6 +94,7 @@
     <Compile Include="Satellite\SatelliteMenuButton.cs" />
     <Compile Include="Satellite\SatelliteMenuButtonItem.cs" />
     <Compile Include="Satellite\SatelliteMenuItemEventArgs.cs" />
+    <Compile Include="Satellite\XSatelliteFloatingMenuRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />

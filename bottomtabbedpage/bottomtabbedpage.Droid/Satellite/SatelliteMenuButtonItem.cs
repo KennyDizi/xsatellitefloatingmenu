@@ -1,9 +1,3 @@
-// Decompiled with JetBrains decompiler
-// Type: SatelliteMenu.SatelliteMenuButtonItem
-// Assembly: SatelliteMenu, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: 193A7BB1-5276-4CC6-8511-0A490974AD2E
-// Assembly location: C:\Users\trungdc\Desktop\satellite-menu-1.2.1.0\lib\android\SatelliteMenu.dll
-
 using System;
 using Android.Graphics.Drawables;
 using Android.Widget;
@@ -42,8 +36,8 @@ namespace bottomtabbedpage.Droid.Satellite
         /// <param name="imgResourceId">Image resource identifier.</param>
         public SatelliteMenuButtonItem(int tag, int imgResourceId)
         {
-            this.ImgResourceId = imgResourceId;
-            this.Tag = tag;
+            ImgResourceId = imgResourceId;
+            Tag = tag;
         }
 
         /// <summary>
@@ -53,8 +47,8 @@ namespace bottomtabbedpage.Droid.Satellite
         /// <param name="imgDrawable">Image drawable.</param>
         public SatelliteMenuButtonItem(int tag, Drawable imgDrawable)
         {
-            this.ImgDrawable = imgDrawable;
-            this.Tag = tag;
+            ImgDrawable = imgDrawable;
+            Tag = tag;
         }
     }
 

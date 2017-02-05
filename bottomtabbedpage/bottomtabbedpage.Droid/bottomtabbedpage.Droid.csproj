@@ -75,6 +75,10 @@
       <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Plugin.CurrentActivity, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ObjectModel" />
@@ -156,12 +160,14 @@
   <ItemGroup>
     <Compile Include="BottomBarPageRenderer.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Satellite\PopoutAnimationFactory.cs" />
     <Compile Include="Satellite\Resource.cs" />
     <Compile Include="Satellite\SatellieMenuButton.cs" />
     <Compile Include="Satellite\SatelliteMenuButtonItem.cs" />
+    <Compile Include="Satellite\XSatelliteFloatingMenuRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

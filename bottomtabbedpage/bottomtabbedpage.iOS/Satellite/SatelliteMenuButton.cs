@@ -113,10 +113,10 @@ namespace bottomtabbedpage.iOS.Satellite
             var button =
                 new UIButton(new CGRect(0, 0, menuItem.ItemImage.CGImage.Width / UIScreen.MainScreen.Scale,
                     menuItem.ItemImage.CGImage.Height / UIScreen.MainScreen.Scale));
-            button.SetBackgroundImage(menuItem.ItemImage, 0L);
+            button.SetBackgroundImage(menuItem.ItemImage, UIControlState.Normal);
             menuItem.ImageChanged = delegate
             {
-                button.SetBackgroundImage(menuItem.ItemImage, 0L);
+                button.SetBackgroundImage(menuItem.ItemImage, UIControlState.Normal);
             };
 
             button.TouchUpInside += HandleTouchUpInsideButton;

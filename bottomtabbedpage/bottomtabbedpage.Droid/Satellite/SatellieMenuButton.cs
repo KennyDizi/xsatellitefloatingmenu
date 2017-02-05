@@ -58,6 +58,8 @@ namespace bottomtabbedpage.Droid.Satellite
         /// <summary>Occurs when menu item is being touched by the user.</summary>
         public event EventHandler<SatelliteMenuItemEventArgs> MenuItemClick;
 
+        public bool IsOpened { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="T:bottomtabbedpage.Droid.Satellite.SatelliteMenuButton" /> class.
         /// </summary>
@@ -70,6 +72,7 @@ namespace bottomtabbedpage.Droid.Satellite
             Radius = DEFAULT_RADIUS;
             ItemsAngle = DEFAULT_ITEMS_ANGLE;
             Initialize(context, null, 0);
+            IsOpened = false;
         }
 
         /// <summary>
@@ -85,6 +88,7 @@ namespace bottomtabbedpage.Droid.Satellite
             Radius = DEFAULT_RADIUS;
             ItemsAngle = DEFAULT_ITEMS_ANGLE;
             Initialize(context, attrs, 0);
+            IsOpened = false;
         }
 
         /// <summary>
@@ -101,6 +105,7 @@ namespace bottomtabbedpage.Droid.Satellite
             Radius = DEFAULT_RADIUS;
             ItemsAngle = DEFAULT_ITEMS_ANGLE;
             Initialize(context, attrs, style);
+            IsOpened = false;
         }
 
         /// <summary>Initialize the specified context, attrs and style.</summary>
@@ -161,8 +166,7 @@ namespace bottomtabbedpage.Droid.Satellite
 
         private void OpenItems()
         {
-            if (_plusAnimationActive)
-                return;
+            if (_plusAnimationActive) return;
             _plusAnimationActive = true;
             if (!_rotated)
             {
@@ -171,12 +175,12 @@ namespace bottomtabbedpage.Droid.Satellite
                     menuItem.View.StartAnimation(menuItem.OutAnimation);
             }
             _rotated = !_rotated;
+            IsOpened = true;
         }
 
         private void CloseItems()
         {
-            if (_plusAnimationActive)
-                return;
+            if (_plusAnimationActive) return;
             _plusAnimationActive = true;
             if (_rotated)
             {
@@ -185,6 +189,7 @@ namespace bottomtabbedpage.Droid.Satellite
                     menuItem.View.StartAnimation(menuItem.InAnimation);
             }
             _rotated = !_rotated;
+            IsOpened = false;
         }
 
         /// <summary>
@@ -292,13 +297,19 @@ namespace bottomtabbedpage.Droid.Satellite
 
         public void ResetItems()
         {
-            if (_menuItems.Count <= 0)
-                return;
+            if (_menuItems.Count <= 0) return;
             var satelliteMenuButtonItemList =
                 new List<SatelliteMenuButtonItem>(_menuItems);
             _menuItems.Clear();
             RemoveAllViews();
             AddItems(satelliteMenuButtonItemList.ToArray());
+        }
+
+        public void ClearItems()
+        {
+            if (_menuItems.Count <= 0) return;
+            _menuItems.Clear();
+            RemoveAllViews();
         }
 
         private void RecalculateMeasureDiff()
