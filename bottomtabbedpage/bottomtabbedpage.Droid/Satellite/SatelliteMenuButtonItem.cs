@@ -8,7 +8,7 @@ using System;
 using Android.Graphics.Drawables;
 using Android.Widget;
 
-namespace SatelliteMenu
+namespace bottomtabbedpage.Droid.Satellite
 {
     /// <summary>
     /// Popout menu button item definition, used to initiate the menu button.
@@ -36,7 +36,7 @@ namespace SatelliteMenu
         internal int FinalY { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:SatelliteMenu.SatelliteMenuButtonItem" /> class.
+        /// Initializes a new instance of the <see cref="T:bottomtabbedpage.Droid.Satellite.SatelliteMenuButtonItem" /> class.
         /// </summary>
         /// <param name="tag">Identifier.</param>
         /// <param name="imgResourceId">Image resource identifier.</param>
@@ -47,7 +47,7 @@ namespace SatelliteMenu
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="T:SatelliteMenu.SatelliteMenuButtonItem" /> class.
+        /// Initializes a new instance of the <see cref="T:bottomtabbedpage.Droid.Satellite.SatelliteMenuButtonItem" /> class.
         /// </summary>
         /// <param name="tag">Identifier.</param>
         /// <param name="imgDrawable">Image drawable.</param>

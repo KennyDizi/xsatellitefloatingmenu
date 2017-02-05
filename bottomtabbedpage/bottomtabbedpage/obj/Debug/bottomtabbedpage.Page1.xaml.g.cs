@@ -9,20 +9,19 @@
 //------------------------------------------------------------------------------
 
 namespace bottomtabbedpage {
-    using System;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
     
     
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\xamarindemospace\\xsatellitefloatingmenu\\bottomtabbedpage\\bottomtabbedpage\\Page" +
+        "1.xaml")]
     public partial class Page1 : global::bottomtabbedpage.SourceCode.XNativeBasePageView {
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Image ImageCity;
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(Page1));
-            ImageCity = this.FindByName<global::Xamarin.Forms.Image>("ImageCity");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
+            ImageCity = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "ImageCity");
         }
     }
 }

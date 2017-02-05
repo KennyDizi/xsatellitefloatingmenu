@@ -1,1 +1,0 @@
-<resources><declare-styleable name="SatelliteMenu"><attr name="speed" format="integer" /><attr name="itemsAngle" format="float" /><attr name="radius" format="dimension" /><attr name="closeOnClick" format="boolean" /><attr name="mainImage" format="reference" /></declare-styleable></resources>

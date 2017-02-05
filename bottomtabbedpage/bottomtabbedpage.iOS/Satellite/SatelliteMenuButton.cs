@@ -122,7 +122,7 @@ namespace bottomtabbedpage.iOS.Satellite
             button.TouchUpInside += HandleTouchUpInsideButton;
             _buttonItems.Add(button);
             _parentView.AddSubview(button);
-            button.Center = (Center);
+            button.Center = Center;
         }
 
         public void RemoveItem(SatelliteMenuButtonItem menuItem)
@@ -149,15 +149,16 @@ namespace bottomtabbedpage.iOS.Satellite
             {
                 Animate(Speed, delegate
                 {
-                    Transform = (CGAffineTransform.MakeRotation(0.7853982f));
+                    Transform = CGAffineTransform.MakeRotation(0.7853982f);
                 });
             }
-            int index;
-            for (index = 0; index < _buttonItems.Count; index++)
+
+            var buttomItemCount = _buttonItems.Count;
+            for (var index = 0; index < buttomItemCount; index++)
             {
                 var button = _buttonItems[index];
                 button.Superview.BringSubviewToFront(button);
-                var num = (_buttonItems.Count > 1) ? (1.0 / (_buttonItems.Count - 1)) : 1.0;
+                var num = buttomItemCount > 1 ? 1.0 / (buttomItemCount - 1) : 1.0;
                 var num2 = index * num;
                 var num3 = (1.0 - num2) * 90.0 * 3.1415927410125732 / 180.0;
                 var rotation = CGAffineTransform.MakeRotation((float)num3);
@@ -183,7 +184,7 @@ namespace bottomtabbedpage.iOS.Satellite
                         var pointF = new PointF((float)(button.Center.X - num6), (float)(button.Center.Y - num7));
                         button.Center = pointF;
                     });
-                    if (index1 == _buttonItems.Count)
+                    if (index1 == buttomItemCount)
                     {
                         _expanded = true;
                         _transition = false;
@@ -203,22 +204,21 @@ namespace bottomtabbedpage.iOS.Satellite
             {
                 Transform = CGAffineTransform.MakeIdentity();
             });
-
-            int index;
-            for (index = 0; index < _buttonItems.Count; index++)
+            var buttomItemCount = _buttonItems.Count;
+            for (var index = 0; index < buttomItemCount; index++)
             {
                 var button = _buttonItems[index];
-                var num = (_buttonItems.Count > 1) ? (1.0 / (_buttonItems.Count - 1)) : 1.0;
+                var num = buttomItemCount > 1 ? 1.0 / (buttomItemCount - 1) : 1.0;
                 var num2 = index * num;
                 var index1 = index;
                 Animate(Speed, Speed * (1.0 - num2), UIViewAnimationOptions.CurveEaseOut, delegate
                 {
                     button.Alpha = 0.0f;
-                    button.Center = (Center);
-                    button.Transform = (CGAffineTransform.MakeIdentity());
+                    button.Center = Center;
+                    button.Transform = CGAffineTransform.MakeIdentity();
                 }, delegate
                 {
-                    if (index1 == _buttonItems.Count)
+                    if (index1 == buttomItemCount)
                     {
                         _expanded = false;
                         _transition = false;
@@ -263,65 +263,6 @@ namespace bottomtabbedpage.iOS.Satellite
                     Collapse();
                 }
             });
-        }
-    }
-
-
-    public class SatelliteMenuItemEventArgs : EventArgs
-    {
-        public SatelliteMenuButtonItem MenuItem { get; set; }
-    }
-
-    public class SatelliteMenuButtonItem
-    {
-        private UIImage _itemImage;
-
-        public UIImage ItemImage
-        {
-            get { return _itemImage; }
-            set
-            {
-                _itemImage = value;
-                ImageChanged?.Invoke();
-            }
-        }
-
-        internal Action ImageChanged { get; set; }
-
-        public int Tag { get; set; }
-
-        public string Name { get; set; }
-
-        public event EventHandler Click;
-
-        public SatelliteMenuButtonItem(UIImage itemImage)
-        {
-            ItemImage = itemImage;
-        }
-
-        public SatelliteMenuButtonItem(UIImage itemImage, int tag)
-        {
-            ItemImage = itemImage;
-            Tag = tag;
-        }
-
-        public SatelliteMenuButtonItem(UIImage itemImage, string name)
-        {
-            ItemImage = itemImage;
-            Name = name;
-        }
-
-        public SatelliteMenuButtonItem(UIImage itemImage, int tag, string name)
-        {
-            ItemImage = itemImage;
-            Tag = tag;
-            Name = name;
-        }
-
-        internal void FireClick(object sender, EventArgs args)
-        {
-            var click = Click;
-            click?.Invoke(sender, args);
         }
     }
 }
