@@ -121,7 +121,7 @@ namespace bottomtabbedpage.iOS.Satellite
 
             button.TouchUpInside += HandleTouchUpInsideButton;
             _buttonItems.Add(button);
-            _parentView.AddSubview(button);
+            _parentView?.AddSubview(button);
             button.Center = Center;
         }
 

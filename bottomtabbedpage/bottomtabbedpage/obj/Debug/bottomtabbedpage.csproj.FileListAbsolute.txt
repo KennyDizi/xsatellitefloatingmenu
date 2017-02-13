@@ -29,4 +29,5 @@ D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.Page1.xaml.g.cs
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.dll
 D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.pdb
-D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.csprojResolveAssemblyReference.cache
+D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\obj\Debug\bottomtabbedpage.dll.mdb
+D:\xamarindemospace\xsatellitefloatingmenu\bottomtabbedpage\bottomtabbedpage\bin\Debug\bottomtabbedpage.dll.mdb

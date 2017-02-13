@@ -89,6 +89,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BottomBarPageRenderer.cs" />
+    <Compile Include="Liquid\CellSelectedEventArgs.cs" />
+    <Compile Include="Liquid\CircleLiquidBaseView.cs" />
+    <Compile Include="Liquid\LiquidFloatingActionButton.cs" />
+    <Compile Include="Liquid\LiquidFloatingCell.cs" />
+    <Compile Include="Liquid\LiquittableCircle.cs" />
+    <Compile Include="Liquid\SimpleCircleLiquidEngine.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Satellite\SatelliteMenuButton.cs" />
